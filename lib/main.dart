@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hackademy/body_text.dart';
 import 'package:hackademy/db/db.dart';
+import 'package:hackademy/esercizio.dart';
 import 'package:hackademy/home.dart';
 import 'package:hackademy/palette.dart';
 import 'package:hackademy/routes.dart';
@@ -62,10 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: Theme.of(context).primaryColor,
-        child: SafeArea(child: Home()),
-      ),
+      body: Esercizio(),
     );
   }
 }
